@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Definicion de variables */
+:root{
+    --bordesYLetras: rgb(105, 115, 116); 
+    --fondo:  rgb(238, 234, 229);
+    --bordesTask: #1e1f06;
+}
+
+/*Estilos*/
+body{
+    background-image: url("../img/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Contenedor Principal*/
+.ContenedorToDoList{
+    background-color: var(--fondo);
+    width: 47%;
+    min-height: 43.5rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 2px solid var(--bordesYLetras);
+    padding: 1rem;
+}
+/*Estilos del Titulo*/
+.Titulo__ToDoList{
+    font-family: "Sigmar", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 1rem;
+}
+
+/* Linea de separacion(Referencia Visual)*/
+.linea__Separacion{
+    width: 85%;
+    height: 2px;
+    background-color: var(--bordesYLetras);
+    border-radius: 1rem;
+}
+
+.task{
+
+    margin-top: 1rem;
+    width:90%;
+    min-height: 4rem;
+    font-size: 1rem;
+    font-family: "Sigmar", fseri;
+    color: var(--fondo);
+    background-color: var(--bordesYLetras);
+    border:2px solid var(--bordesTasko) ;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.task.Completada{
+    text-decoration:line-through ;
+    text-decoration-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0) ;
+    border: none;
+    font-style: italic;
+}
+
+i{
+    width: 2rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.icono-completar{
+
+    color: rgb(6, 92, 24);
+}
+
+.icono-delete{
+    color: rgb(92, 6, 6);
+    padding-right: 2rem;
+}
+
+.icono-edit{
+    color: rgb(0, 156, 218);
+}
+
+.icono-edit:hover,
+.icono-completar:hover,
+.icono-delete:hover{
+    background-color: rgba(255, 255, 255, 0.523);
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor__Listas__Resultado{
+    width:70%;
+}
+.Titulo{
+margin-left: 2rem;
+padding-top: 0.9rem;
+}
+
