@@ -40,20 +40,46 @@ function showPokemon(data){
 botones.forEach((boton) => boton.addEventListener('click', (item)=>{
     let botonId = item.currentTarget.id;
     listaPokemon.innerHTML = ""
+    if(botonId === 'dark'){
+        let div = document.createElement('div');
+            div.innerHTML = `
+                <p class= "text-center fs-3 textNohay">No hay pokemon del tipo seleccionado</p>
+            `;
+            listaPokemon.appendChild(div)
+        }
     for(let i = 1; i <= 151; i++){
         fetch(URL + i)
         .then((response) => response.json())
         .then(data => {
+            
             if(botonId === 'verTodos'){
                 showPokemon(data);
-            }else{
+            }
+            else{
                 let tipos = data.types.map(type => type.type.name);
-                if (tipos.some(tipo => tipo.includes(botonId))){
-                    showPokemon(data)
-                }
+                
+                    if (tipos.some(tipo => tipo.includes(botonId))){
+                        showPokemon(data)
+                    }      
             }
 
         })
     }
 
 }));
+
+document.querySelector('#miInput').addEventListener('input',()=>{
+    let look = document.getElementById('miInput').value.trim();
+    listaPokemon.innerHTML = "";
+
+    for(let i = 1; i <= 151; i++){
+        fetch(URL + i)
+        .then((response) => response.json())
+        .then(data => {
+            if(!look || data.name.toLowerCase().includes(look.toLowerCase())){
+                showPokemon(data);
+            }
+        })
+        .catch(error => console.error('ERROR:', error));
+    }
+});
