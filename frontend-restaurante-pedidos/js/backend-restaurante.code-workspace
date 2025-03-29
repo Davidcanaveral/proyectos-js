@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../backend-restaurante"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "frontend-restaurante-pedidos"
+	}
+}
