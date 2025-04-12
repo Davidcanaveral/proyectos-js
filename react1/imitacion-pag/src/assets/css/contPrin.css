@@ -1,0 +1,199 @@
+:root{
+    --colorfondo1: #ededed;
+    --negroPage: #111111;
+    --rojoPag: #f35b2c;
+}
+
+body{
+    background-color: var(--colorfondo1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerRedes{
+    background-color: var(--negroPage);
+    width: 100%;
+    height: 2.1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.Cont__principal{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.278);
+}
+
+.icono-red{
+    margin: 0.2rem;
+    font-size: 20px;
+    color: #ffffff; /* color inicial */
+    transition: color 0.3s ease;
+}
+
+.icono-red:hover {  
+    color: var(--rojoPag); /* color al hacer hover */
+}
+
+.contenedor__separacion{
+    display: flex;
+    margin-right: 1.5rem;
+} 
+
+.cont__header{
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.cont__header__text{
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%; /* Justo debajo del enlace */
+    left: 0;
+    z-index: 1000;
+    margin-top: 0;
+}
+
+.menu-index {
+    width: 100%;
+    height: 4.5rem;
+    background-color: var(--rojoPag);
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Menú a la izquierda, ícono a la derecha */
+    align-items: stretch; /* Asegura que los elementos hijos ocupen toda la altura */
+    padding: 0 2rem;
+}
+
+.menu__index__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    z-index: 1; /* Asegura que el contenido (texto) quede por encima */
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover::before {
+    background-color: var(--colorfondo1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: var(--colorfondo1);
+    color: var(--rojoPag);
+}
+
+.search {
+    margin-right: 2rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#nav_inic{
+    background-color: var(--colorfondo1);
+    height: 100%;
+}
+
+#nav_inic_a{
+    color: var(--rojoPag);
+    
+}
+
+.pre__content{
+    width: 100%;
+    height: 2rem;
+    padding: 1.5rem;
+}
+
+.pre__content__text{
+    font-size: small;
+    color: #878787;
+}
+
+.contAside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titAside{
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--rojoPag);
+}
+.Realimg{
+    margin-top: 1rem;
+}
