@@ -9,21 +9,20 @@ import Precontent from "./components/Precontent"
 function App() {
   return (
     <>
-      <section className='Cont__principal'>
-      <Redes />
-      <Header />
-      <Menu />
-      <Precontent />
-      <div className="container mt-5">  
-        <div className="row">
-          <Aside />
-          <Content />
+      <section className="Cont__principal">
+        <Redes />
+        <Header />
+        <Menu />
+        <Precontent />
+        <div className="container mt-5">  
+          <div className="row contenedor__Contenido">
+            <Aside />
+            <Content />
+          </div>
         </div>
-      </div>
       </section>
-      <section className="Cont__footer">
-
-      </section>
+        <section className="Cont__footer">
+        </section>
       <Footer />
 
     </>

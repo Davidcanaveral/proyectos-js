@@ -1,0 +1,49 @@
+.inner-arrow{
+    display: inline-block;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-weight: bold;
+    padding: 0px 20px 0px 10px;
+    font-size: 14px;
+    line-height: 34px;
+}
+.inner-arrow::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border-top: 16px solid transparent;
+    border-bottom: 17px solid transparent;
+}
+ .cont__Aside{
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+ }
+.Botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.boton__Recetas{
+    margin: 0.3rem;
+}
+.container{
+  
+    display: flex;
+    height: fit-content;
+}
+.contenedor__Contenido{
+    display: flex;
+    height: fit-content;
+    align-items: flex-start;
+    /* overflow: hidden; */
+}

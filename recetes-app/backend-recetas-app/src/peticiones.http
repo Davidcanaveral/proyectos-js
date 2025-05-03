@@ -1,0 +1,11 @@
+###peticion get - todas las recetas
+get http://localhost:3001/api/recetas/
+
+### peticion por id - receta por id
+get http://localhost:3001/api/recetas/1
+###peticion get - todas las recetas por categoria
+get http://localhost:3001/api/recetas/categoria/1
+
+###peticion get - todas las categorias
+get http://localhost:3001/api/categorias
+

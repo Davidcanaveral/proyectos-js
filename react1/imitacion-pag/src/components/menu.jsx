@@ -1,12 +1,15 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+import { useState } from 'react';
+
 export default function Menu() {
   return (
-    <nav className="navbar menu-index">
+    <nav className="menu-index"  >
     <div className="container-fluid">
       <ul className="navbar-nav menu__index__lista">
         <li className="nav-item" id="nav_inic">
-          <a className="nav-link active" id="nav_inic_a" href="#">INICIO</a>
+          <Link className="nav-link active" id="nav_inic_a" to="/">INICIO</Link>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,11 +62,11 @@ export default function Menu() {
           </ul>
         </li>
       </ul>
-      <a href="#" className="search">
+      <Link to="/" className="search">
         <i className="fa fa-search"></i>
-      </a>
+      </Link>
     </div>
   </nav>
-
+ 
   )
 }

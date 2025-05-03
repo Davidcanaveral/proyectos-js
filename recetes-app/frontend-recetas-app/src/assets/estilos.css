@@ -1,0 +1,77 @@
+.logo{
+    width: 150px;
+}
+.container__Contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 24rem;
+    align-items: center;
+}
+.container__Contact__emailCont{
+    width: 40%;
+}
+.container__Contact__textCont{
+    width: 40%;
+}
+
+.container__Contact__ContTitle{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-top: 2px solid #333333;  
+}
+.container__cardReceta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.ImegenReceta{
+    width: 48%;
+    height: 30rem;
+}
+.imagePhoto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.TitleCard{
+    font-style: italic;
+    color: #333333;
+    font-size: 2.5rem;
+}
+.subTilte{
+    font-size: 1rem;
+    color: #525252;
+    font-style: italic;
+}
+.lineCard{
+    margin-left: 6rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    border-top: 2px solid #333333;  
+}
+  
+  .container__aside {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: fit-content;
+
+  }
+  #asideCategoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+  }

@@ -1,10 +1,24 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
 :root{
     --colorfondo1: #ededed;
     --negroPage: #111111;
     --rojoPag: #f35b2c;
 }
+#root{
+    width: 80%;
+    min-height:50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorfondo1);
+    height: fit-content;
+}
 
 body{
+    width: 100%;
     background-color: var(--colorfondo1);
     display: flex;
     flex-direction: column;
@@ -21,6 +35,11 @@ body{
 
 .Cont__principal{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.278);
+    width: 100%;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
 }
 
 .icono-red{
@@ -68,18 +87,18 @@ body{
 
 .menu-index {
     width: 100%;
-    height: 4.5rem;
+    height: 3.5rem; /* Adjust this value if needed */
     background-color: var(--rojoPag);
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically center the content */
 }
 
 .container-fluid {
     width: 100%;
+    height: 3.5rem; 
     display: flex;
     justify-content: space-between; /* Menú a la izquierda, ícono a la derecha */
     align-items: stretch; /* Asegura que los elementos hijos ocupen toda la altura */
-    padding: 0 2rem;
 }
 
 .menu__index__lista {
@@ -91,6 +110,7 @@ body{
     padding: 0;
     height: 100%;
     align-items: center;
+    margin-left: 1rem;
 }
 
 .nav-item {
@@ -159,16 +179,28 @@ body{
     margin-right: 2rem;
     color: white;
     font-size: 1.2rem;
+    display: grid;
+    align-items: center;
 }
 
-#nav_inic{
-    background-color: var(--colorfondo1);
-    height: 100%;
+#nav_inic {
+    background-color: var(--colorfondo1); /* Button background color */
+    height: 100%; /* Fill the parent container */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
 }
 
-#nav_inic_a{
-    color: var(--rojoPag);
-    
+#nav_inic_a {
+    color: var(--rojoPag); /* Text color */
+    height: 100%; /* Fill the parent container */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make the text bold */
 }
 
 .pre__content{
@@ -186,6 +218,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
 }
 
 .titAside{
@@ -195,5 +228,11 @@ body{
     color: var(--rojoPag);
 }
 .Realimg{
-    margin-top: 1rem;
+    margin-top: 1rem;;
+}
+.Img__real{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%
 }
