@@ -1,6 +1,24 @@
 import { Link } from "react-router-dom"
+import axios from "axios";
+import { useEffect , useState } from "react";
 
 export default function Menu() {
+    let [recepesApi, setRecepesApi] = useState([]);
+       async function getRecepes(){
+           try{
+             let answer = await axios.get("http://localhost:3001/api/recetas");
+             console.log(answer.data);
+             setRecepesApi(answer.data);
+           }catch(e){
+             console.log(e);
+           }
+       }
+       useEffect(()=>{
+         getRecepes();
+         console.log(listaNombres);
+       },[])
+    
+    let listaNombres = recepesApi.map((r) => r.receta_nombre);    
   return (
     <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
         <div className="container-fluid">
