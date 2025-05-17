@@ -1,0 +1,38 @@
+.cartera__container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.titulo__cartera{
+    border-bottom: 2px solid   #d4af37;;
+    display: flex;
+    justify-content: center;
+}
+.cont__Cart{
+    background-color: #d4af3768;
+    width: 100%;
+    min-height: 10rem;
+    border:1px solid #d4af37;
+    border-radius: 1rem;
+}
+.carta__bolsi{
+    border:1px solid #d4af37 !important;
+    background-color: #2e2e2e !important;
+    color:#d4af37 !important;
+    max-width: 18rem;
+}
+.detalles__bol{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.carta__bolsi_bod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
