@@ -1,5 +1,10 @@
+:root{
+    --yellow_bg: #fddb24;
+    --white_bg:#ffffff;
+    --gray_bg: #f7f7f7;
+    --dark_bd:#2b2a28;
+}
 .contenidoPerfil{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +16,33 @@
     min-height: 4rem;
 }
 .card__perfil{
-    background-color: #2e2e2e !important;
-    color: #d4af37 !important;
+    background-color: var(--yellow_bg) !important;
+    color: var(--dark_bd) !important;
     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.3), 1px 4px 20px rgba(0, 0, 0, 0.251);
+}
+
+.cont__Cart--mod{
+    width: 98% !important;
+    background-color: var(--gray_bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carta__bolsi--mod{
+    padding: 2rem;
+     background-color: var(--gray_bg) !important;
+    color:var(--dark_bd) !important;
+    min-width: 25rem;
+    min-height: 30rem;
+    border-radius: 10px;
+    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.158), 1px 3px 18px rgba(0, 0, 0, 0.218);
+    
+}
+
+.carta__bolsi_bod--mod{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }

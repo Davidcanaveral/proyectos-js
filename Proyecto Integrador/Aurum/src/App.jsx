@@ -1,23 +1,24 @@
-import NavBar from "./components/NavBar"
-import LateralMenu from "./components/LateralMenu"
-import Cartera from "./components/cartera"
-import Graficos from "./components/Graficos"
+import Home from "./pages/Home"
+import Dashboard from "./pages/dashboard"
+import { Routes,Route } from "react-router-dom"
+import NotFound from "./pages/NotFound"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
+import PerfilDetail from "./pages/PerfilDetail"
+
 function App() {
   return (
     <>
-    <div className="app-container" style={{display: 'flex', height: '100vh', width: '100vw'}}>
-      <LateralMenu />
-      <div className="contenedor-derecho">
-        <NavBar />
-        <main className="contenido-principal">
-          <Cartera />
-          <Graficos />
-        </main>
-      </div>
-    </div>
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register />} /> 
+        <Route path="/PerfilDetail" element={<PerfilDetail />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </>
   )
 }
 
-export default App
+export default App  

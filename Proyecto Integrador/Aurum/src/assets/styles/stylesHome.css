@@ -1,0 +1,44 @@
+:root{
+    --yellow_bg: #fddb24;
+    --white_bg:#ffffff;
+    --gray_bg: #f7f7f7;
+    --dark_bd:#2b2a28;
+}
+.home__wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--white_bg);
+}
+.NavHome{
+    width: 100% !important;
+    height: 5 rem;
+    background-color: var(--yellow_bg) !important;
+    background-color: var(--yellow_bg);
+     filter: drop-shadow(
+        4px 3px 1px rgba(0, 0, 0, 0.259)
+    );
+}
+.home__container{
+    flex: 1;
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgInfor{
+    width: 6rem;
+}
+.cardInfor{
+    border-radius: 10px;
+    min-width: 6rem;
+    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.3), 1px 4px 20px rgba(0, 0, 0, 0.251);
+}
+.conte__cardinfor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}

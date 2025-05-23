@@ -1,24 +1,34 @@
 
-   html, body {
+   :root{
+    --yellow_bg: #fddb24;
+    --white_bg:#ffffff;
+    --gray_bg: #f7f7f7;
+    --dark_bd:#2b2a28;
+}
+   /* html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background: #212125;
+    background: var(--white_bg);
     display: flex;
-  }
+  } */
   
   /* Barra lateral: ocupa todo el alto y ancho fijo */
   .LateralMenu, .navbar-lateral {
     width: 14rem;
     height: 100vh; 
-    background-color: #d4af37;
+    background-color: var(--yellow_bg);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly!important;
     flex-shrink: 0;
+    background-color: var(--yellow_bg);
+     filter: drop-shadow(
+        4px 3px 1px rgba(0, 0, 0, 0.259)
+    );
   }
   
   /* Contenedor derecho: toma el resto del ancho */
@@ -27,21 +37,24 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #2e2e2e;
+    background-color: var(--white_bg);
   }
   
   /* Navbar superior: altura fija, ancho = ancho restante, alineado a la derecha del lateral */
   .NavBar, .NavbarPrin {
     height: 6rem;
     width: 100%; /* Aquí toma todo el ancho del contenedor derecho */
-    background-color: #d4af37;
-    box-shadow: 0 5px 5px -4px rgba(255, 255, 255, 0.392);
+    background-color: var(--yellow_bg);
+     filter: drop-shadow(
+        4px 3px 1px rgba(0, 0, 0, 0.259)
+    );
     display: flex;
     align-items: center;
     padding: 0 1rem;
     flex-shrink: 0;
     position: relative;
-  }
+
+  } 
   /* Contenido principal debajo del navbar */
   .contenido-principal {
     flex-grow: 1;
@@ -59,7 +72,8 @@
     );
   }
   .linkText{
-    transition: transform 0.3s ease;
+    color: white !important;
+    transition: transform 0.3s ease !important;
   }
   .linkText:hover{
     transform: scale(1.2);
@@ -81,6 +95,7 @@
     justify-content:space-evenly ;
   }
   .icono{
+    color: white !important;
     transition: transform 0.3s ease;
   }
   .icono:hover{

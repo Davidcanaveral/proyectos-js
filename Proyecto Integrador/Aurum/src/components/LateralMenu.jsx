@@ -7,7 +7,7 @@ export default function LateralMenu() {
   return (
     <>
     <nav id="" className="navbar mb-3 navbar-lateral">
-        <a className="" href="#"><img src={logo} alt="" className="image__logo"/></a>
+        <Link className="" to="/"><img src={logo} alt="" className="image__logo"/></Link>
             <div className="separador">
 
             </div>

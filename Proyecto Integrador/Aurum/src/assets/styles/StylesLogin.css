@@ -1,0 +1,12 @@
+.home__container--mod{
+    width: 100%;
+    display: flex;
+    align-items: center;
+} 
+.container__log{
+    margin-top: 1rem;
+    width: 50% !important;
+     border-top: 2px solid #cfcfcf;
+    border-bottom: 2px solid #cfcfcf;
+    padding-bottom: 1rem;
+}

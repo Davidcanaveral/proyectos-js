@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Perfil() {
   return (
@@ -11,8 +12,8 @@ export default function Perfil() {
                 <h5 className="card-title">$20.000.000</h5>
                 <p className="card-text">"Ahorros"</p>
                 <h6 className="card-title">$2.000.000</h6>
-                <br />
-                <a href="#" className="btn btn-outline-warning">Ver Detalle</a>
+                <br /> 
+                <Link to="/PerfilDetail" className="btn btn-outline-dark">Ver Detalle</Link>
             </div>
         </div>
     </>
