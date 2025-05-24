@@ -1,8 +1,15 @@
-import React from 'react'
 import logo_con_tipografia from '../assets/img/logo_con_tipografia.png'
 import { Link } from 'react-router-dom'
+import React,{ use } from 'react'
+import { useForm } from 'react-hook-form'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
-export default function Login() {
+
+export default function Login({onLogin}) {
+   let { register,handleSubmit, formState : { errors } } = useForm();
+  let navigate = useNavigate();
+  
   return (
     <>  
     <section className="home__wrapper col-12">
@@ -12,7 +19,7 @@ export default function Login() {
             <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul className="navbar-nav">
                 <li className="nav-item linkText"><Link className="nav-link text-light" to="/"><b>Inicio</b></Link></li>
-                <li className="nav-item linkText"><Link className="nav-link text-light" to="*"><b>Contacto</b></Link></li>
+                <li className="nav-item linkText"><Link className="nav-link text-light" to="/Contact"><b>Contacto</b></Link></li>
                 <li className="nav-item"><Link className="btn btn-aurum ms-3" to="/Register">Sign in</Link></li>
                 </ul>
             </div>

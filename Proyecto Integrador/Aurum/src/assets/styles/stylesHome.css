@@ -42,3 +42,16 @@
     justify-content: space-evenly;
     padding-top: 2rem;
 }
+.container__contactSect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container__Contact{
+    width: 51%;
+    border-radius: 10px;
+    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.3), 1px 4px 20px rgba(0, 0, 0, 0.251);
+    padding: 1rem;
+}

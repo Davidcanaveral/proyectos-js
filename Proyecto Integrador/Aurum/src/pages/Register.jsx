@@ -12,7 +12,7 @@ export default function Register() {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
                     <li className="nav-item linkText"><Link className="nav-link text-light" to="/"><b>Inicio</b></Link></li>
-                    <li className="nav-item linkText"><Link className="nav-link text-light" to="*"><b>Contacto</b></Link></li>
+                    <li className="nav-item linkText"><Link className="nav-link text-light" to="/Contact"><b>Contacto</b></Link></li>
                     <li className="nav-item"><Link className="btn btn-aurum ms-3" to="/Login">Log In</Link></li>
                     </ul>
                 </div>

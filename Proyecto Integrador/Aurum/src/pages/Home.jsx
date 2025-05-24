@@ -9,12 +9,12 @@ export default function Home() {
 <section className="home__wrapper">
       <nav className="navbar navbar-expand-lg navbar-dark NavHome">
         <div className="container-fluid">
-          <img src={logo_con_tipografia} alt="" className="imgInfor"/>
+          <img src={logo_con_tipografia} alt="" className="imgInfor" onClick={()=>alert('Bruh 😑')}/>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item linkText"><a className="nav-link text-light" href="#"><b>Inicio</b></a></li>
-              <li className="nav-item linkText"><a className="nav-link text-light" href="#"><b>Contacto</b></a></li>
-              <li className="nav-item"><a className="btn btn-aurum ms-3" href="#">Log in</a></li>
+              <li className="nav-item linkText"><Link className="nav-link text-light" to="/"><b>Inicio</b></Link></li>
+              <li className="nav-item linkText"><Link className="nav-link text-light" to="/Contact"><b>Contacto</b></Link></li>
+              <li className="nav-item"><Link className="btn btn-aurum ms-3" to="/Login">Log in</Link></li>
             </ul>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
       <section className="py-5 bg-light text-center col-11">
         <div className="container-fluid">
           <h2>Empieza hoy a tomar control de tus finanzas con nosotros.</h2>
-          <a href="#" className="btn btn-aurum btn-lg mt-3">Comenzar</a>
+          <Link to="/Register" className="btn btn-aurum btn-lg mt-3">Comenzar</Link>
         </div>
       </section>
 

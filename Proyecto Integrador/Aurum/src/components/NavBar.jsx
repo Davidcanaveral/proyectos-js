@@ -10,7 +10,7 @@ export default function NavBar() {
                 <Link className="nav-link linkText" to="/Dashboard"><b>Menu</b></Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link linkText" to="*"><b>Contacto</b></Link>
+                <Link className="nav-link linkText" to="/Contact"><b>Contacto</b></Link>
                 </li>
                 <li className="nav-item dropdown">
                 </li>

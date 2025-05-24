@@ -1,8 +1,8 @@
 import Login from "./pages/Login"
 import Register from "./pages/Register"
 import DashBoard from "./pages/DashBoard"
-import { Routes,Route,Navigate } from "react-router-dom"
 import Notfound from "./pages/Notfound"
+import { Routes,Route,Navigate } from "react-router-dom"
 import { useState,useEffect } from "react"
 
 function App() {
